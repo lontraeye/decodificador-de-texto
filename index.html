@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Decodificador de Texto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsivo.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <img class="logo-alura" src="assets/logo-alura.svg" alt="Logotipo Alura">
+
+        <div class="esquerda">
+            <form>
+                <textarea id="texto-principal" type="text" placeholder="Digite seu texto"></textarea>
+                <div>
+                    <div class="alerta">
+                        <img src="assets/warning.svg">
+                        <span>Apenas letras minúsculas e sem acento.</span>
+                    </div>
+                    <div class="botoes">
+                        <button class="bt-cripto" id="criptografar">Criptografar</button>
+                        <button class="bt-descripto" id="descriptografar">Descriptografar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="direita">
+            <div class="sem-retorno">
+                <img src="assets/imagem.svg" id="mensagem-nao-encontrada" alt="Nenhuma mensagem encontrada" class="imagemN">
+                <h3 class="titulo-sem-retorno">Nenhuma mensagem encontrada</h3>
+                <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+            </div>
+            <div class="texto-criptografado d-none">
+                <p></p>
+                <button class="bt-copiar" id="copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+    </div>
+<footer class="footer">desenvolvido por Lucas Cardozo</footer>
+    <script src="js/criptografa-e-descriptografa.js"></script>
+    <script src="js/criptografo.js"></script>
+    <script src="js/copiar.js"></script>
+</body>
+
+</html>

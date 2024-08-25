@@ -1,0 +1,180 @@
+:root {
+    --dark-blue-300: #0A3871;
+    --light-blue-100: #F3F5FC;
+    --gray-300: #868E96;
+    --gray-400: #485057;
+    --gray-500: #343A40;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--light-blue-100);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 96vh;
+}
+
+.direita {
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    width: 20vw;
+    padding: 5%;
+    margin-bottom: 20px;
+}
+.esquerda {
+    width: 78vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+}
+
+.footer {
+    width: 100%;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    bottom: 0;
+}
+
+.imagemN {
+    width: 90%;
+}
+
+.logo-alura {
+    height: 48px;
+    margin: 3%;
+
+}
+
+.logo-alura:hover {
+    height: 48px;
+    margin-right: 100px;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+form textarea {
+    width: 100%;
+    height: 70vh !important;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+    color: var(--dark-blue-300);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    background-color: transparent;
+    resize: none;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+form textarea::placeholder {
+    color: var(--dark-blue-300);
+}
+
+button {
+    width: 328px;
+    height: 67px;
+    background-color: transparent;
+    text-align: center;
+    box-shadow: none;
+    border: 1px solid var(--dark-blue-300);
+    border-radius: 24px;
+    padding: 24px;
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 19px;
+    outline: none;
+}
+
+.alerta {
+    font-family: 'Inter';
+    font-size: 12px;
+    color: var(--gray-400);
+    opacity: 0.8;
+    margin: 0 0 16px 8px;
+}
+
+.alerta img {
+    margin-bottom: -4px;
+}
+
+.botoes {
+    display: flex;
+    gap: 20px;
+}
+
+button.bt-cripto {
+    background-color: var(--dark-blue-300);
+    color: #FFFFFF;
+}
+
+button.bt-descripto {
+    background-color: #D8DFE8;
+    color: var(--dark-blue-300);
+}
+
+button.bt-copiar {
+    width: 100%;
+    background-color: #D8DFE8;
+    color: var(--dark-blue-300);
+}
+
+.sem-retorno img {
+    margin: 150px 32px 0 32px;
+}
+
+.titulo-sem-retorno {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--gray-500);
+
+    margin: 32px 32px 32px 16px;
+}
+
+.sem-retorno p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-400);
+}
+
+.texto-criptografado {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.texto-criptografado p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: left;
+    color: var(--gray-400);
+}
+
+.d-none {
+    display: none;
+    pointer-events: none;
+}
+
